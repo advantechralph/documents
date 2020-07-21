@@ -96,7 +96,7 @@ done
 * 查看i210有沒有掛上
 * lspci 
 
-![](https://i.imgur.com/zuCBBGe.png)
+![](003.png)
 
 ## i211 
 
@@ -104,10 +104,10 @@ done
 
 * Step 2. sudo shutdown -P now
 
-![](https://i.imgur.com/ZrmN15G.png)
+![](004.png)
 
 
-![](https://i.imgur.com/ftoVQZ9.png)
+![](005.png)
 
 ##  hdd
 
@@ -116,7 +116,7 @@ done
 
     - 後面輸入數字 設備數目
 
-![](https://i.imgur.com/VZw3Unk.png)
+![](006.png)
 
 ## usb 2.0 3.0 
 
@@ -128,9 +128,9 @@ done
 
     - 速度 1000m 
 
-![](https://i.imgur.com/u3uLAaz.png)
-![](https://i.imgur.com/P57cON0.png)
-![](https://i.imgur.com/4gego5j.png)
+![](007.png)
+![](008.png)
+![](009.png)
 
 ## Rs485
 
@@ -146,9 +146,9 @@ done
 
 * ./485_test.sh /dev/ttyTHS2
 
-* ![](https://i.imgur.com/46ghU6q.png)
+* ![](010.png)
 
-* ![](https://i.imgur.com/rL0LSaO.png)
+* ![](011.png)
 
 
 ## 710ivx-nx gpio 
@@ -167,7 +167,7 @@ done
 
 * pip3 install pyserial
 
-![](https://i.imgur.com/dC9lY3e.png)
+![](12.png)
 
 
 ## 參考資料
