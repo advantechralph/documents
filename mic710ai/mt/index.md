@@ -132,7 +132,7 @@ done
 ![](008.png)
 ![](009.png)
 
-## Rs485
+## RS485
 
 * 拿兩台對接rs485，一邊是 server 一邊是client
 
@@ -146,9 +146,9 @@ done
 
 * ./485_test.sh /dev/ttyTHS2
 
-* ![](010.png)
+![](010.png)
 
-* ![](011.png)
+![](011.png)
 
 
 ## 710ivx-nx gpio 
@@ -167,7 +167,7 @@ done
 
 * pip3 install pyserial
 
-![](12.png)
+![](012.png)
 
 
 ## 參考資料
