@@ -23,7 +23,7 @@
 - cat /sys/kernel/debug/gpio
 
 
-![](https://i.imgur.com/BU2u2C1.png)
+![](002.png)
 
 * 將腳位寫入
     
