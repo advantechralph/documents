@@ -3,12 +3,12 @@
 ## Contents
 - [產線程式說明](#產線程式說明)
 - [GPIO狀態資訊](#GPIO狀態資訊)
-- [i210 燒錄步驟改動如下](#i210 燒錄步驟改動如下)
+- [i210 燒錄步驟改動如下](# i210 燒錄步驟改動如下)
 - [i211 ](#i211)
 - [hdd](#hdd)
-- [usb 2.0 3.0](#usb 2.0 3.0)
+- [usb 2.0 3.0](#usb)
 - [RS485](#RS485)
-- [710ivx-nx gpio](#710ivx-nx gpio)
+- [710ivx-nx gpio](#710ivx-nx-gpio)
 ---
 
 ## 產線程式說明
@@ -85,7 +85,7 @@ done
 * sudo ./gpio.test.sh
 
 
-## i210 燒錄步驟改動如下
+## i210燒錄步驟改動如下
 
 * 先到files server下載下來放到板子上的 /home
 
@@ -129,7 +129,7 @@ done
 
 ![](006.png)
 
-## usb 2.0 3.0 
+## usb 
 
 * USB2.0孔 插入 usb
     
@@ -162,7 +162,7 @@ done
 ![](011.png)
 
 
-## 710ivx-nx gpio 
+## 710ivx-nx-gpio 
 
 * nx gpio測試程式與其他板子不同
 
