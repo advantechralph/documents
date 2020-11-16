@@ -3,11 +3,10 @@
 ## Contents
 - [產線程式說明](#產線程式說明)
 - [GPIO狀態資訊](#GPIO狀態資訊)
-  - [Write Image to SD Card](#write-image-to-sD-card)
 - [i210 燒錄步驟改動如下](#i210 燒錄步驟改動如下)
 - [i211 ](#i211)
-- [hdd ](#hdd)
-- [usb 2.0 3.0  ](#usb 2.0 3.0)
+- [hdd](#hdd)
+- [usb 2.0 3.0](#usb 2.0 3.0)
 - [RS485](#RS485)
 - [710ivx-nx gpio](#710ivx-nx gpio)
 ---
