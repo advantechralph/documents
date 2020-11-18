@@ -1,15 +1,40 @@
 # MIC-710AI IO 產線測試
 
+## Contents
+- [產線程式說明](#產線程式說明)
+- [GPIO狀態資訊](#GPIO狀態資訊)
+- [i210](#i210)
+- [i211 ](#i211)
+- [hdd](#hdd)
+- [usb 2.0 3.0](#usb)
+- [RS485](#RS485)
+- [710ivx-nx gpio](#710ivx-nx-gpio)
+---
 
-![IO testing items](https://github.com/advantechralph/documents/blob/master/mic710ai/mt/001.png?raw=true)
+## 產線程式說明
 
-## 狀態資訊
+- 485
+    - 測試之前COM_SW1的四個Switch全部切成ON，將兩台MIC-710AI對接，一台是NANO另一台是NX
+    - 安裝環境 sudo apt-get update && sudo apt-get install -y python3-pip && sudo pip3 install pyserial
+
+- GPIO 
+    - 執行 sudo ./gpio_test.sh
+
+- i211 
+    - 執行 sudo ./burn_i211_mac.sh 00d0c9f25017
+
+- HDD 
+    
+    - 在SATA 和 M.2都各連接一個SSD，在ineternl USB連接隨身碟，總共3個裝置
+    - 執行 sudo ./hdd test.sh
+
+## GPIO狀態資訊
 
 - sudo cat /sys/kernel/debug/tegra_gpio
 - cat /sys/kernel/debug/gpio
 
 
-![](https://i.imgur.com/BU2u2C1.png)
+![](002.png)
 
 * 將腳位寫入
     
@@ -60,7 +85,7 @@ done
 * sudo ./gpio.test.sh
 
 
-## i210 燒錄步驟改動如下
+## i210
 
 * 先到files server下載下來放到板子上的 /home
 
@@ -82,7 +107,7 @@ done
 * 查看i210有沒有掛上
 * lspci 
 
-![](https://i.imgur.com/zuCBBGe.png)
+![](003.png)
 
 ## i211 
 
@@ -90,10 +115,10 @@ done
 
 * Step 2. sudo shutdown -P now
 
-![](https://i.imgur.com/ZrmN15G.png)
+![](004.png)
 
 
-![](https://i.imgur.com/ftoVQZ9.png)
+![](005.png)
 
 ##  hdd
 
@@ -102,9 +127,9 @@ done
 
     - 後面輸入數字 設備數目
 
-![](https://i.imgur.com/VZw3Unk.png)
+![](006.png)
 
-## usb 2.0 3.0 
+## usb 
 
 * USB2.0孔 插入 usb
     
@@ -114,11 +139,11 @@ done
 
     - 速度 1000m 
 
-![](https://i.imgur.com/u3uLAaz.png)
-![](https://i.imgur.com/P57cON0.png)
-![](https://i.imgur.com/4gego5j.png)
+![](007.png)
+![](008.png)
+![](009.png)
 
-## Rs485
+## RS485
 
 * 拿兩台對接rs485，一邊是 server 一邊是client
 
@@ -132,12 +157,12 @@ done
 
 * ./485_test.sh /dev/ttyTHS2
 
-* ![](https://i.imgur.com/46ghU6q.png)
+![](010.png)
 
-* ![](https://i.imgur.com/rL0LSaO.png)
+![](011.png)
 
 
-## 710ivx-nx gpio 
+## 710ivx-nx-gpio 
 
 * nx gpio測試程式與其他板子不同
 
@@ -153,7 +178,7 @@ done
 
 * pip3 install pyserial
 
-![](https://i.imgur.com/dC9lY3e.png)
+![](012.png)
 
 
 ## 參考資料
